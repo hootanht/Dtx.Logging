@@ -39,7 +39,7 @@ namespace Server
 
 			services.AddTransient
 				(serviceType: typeof(Dtx.Logging.ILogger<>),
-				implementationType: typeof(Dtx.Logging.NLogAdapter<>));
+				implementationType: typeof(Dtx.Logging.SerilogAdapter<>));
 
 			//services.AddTransient
 			//	(serviceType: typeof(Dtx.Logging.ILogger<>),
